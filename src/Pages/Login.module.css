@@ -1,0 +1,76 @@
+.loginFundo{
+    background-color: #f9fafb;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cartao{
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.logo{
+    color: #001f3f;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin: 0;
+}
+
+.grupoInput{
+    margin-bottom: 24px;
+}
+
+.label{
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6b7280;
+    margin: 8px;
+}
+
+.input{
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    color: #374151;
+    transition: border-color 0.3s;
+}
+
+.input:focus{
+    border-color: #001f3f;
+}
+
+.botao{
+    width: 100%;
+    background-color: #001f3f;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 8px;
+}
+
+.botao:hover{
+    background-color: #1e3a8a;
+    transform: translateY(-2px);
+}

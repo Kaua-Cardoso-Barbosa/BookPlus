@@ -1,0 +1,80 @@
+.secaoTituloContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 64px;
+    margin-top: 100px;
+}
+
+.grupoTexto{
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.subtitulo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.linha{
+    width: 100px;
+    height: 2px;
+    background-color: #001f3f;
+}
+
+.subtitulo2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #9ca3af;
+}
+
+.tituloPrincipal{
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+.filtros{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.botaoFiltro{
+    padding: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 9999px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    color: #6b7280;
+}
+
+.botaoFiltro:hover{
+    border-color: #001f3f;
+    color: #001f3f;
+}
+
+.ordernar{
+    padding: 10px 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: white;
+    color: #374151;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.ordernar:focus{
+    border-color: #001f3f;
+}
