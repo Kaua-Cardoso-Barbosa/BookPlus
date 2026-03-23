@@ -96,3 +96,13 @@
     font-style: italic;
     margin:0;
 }
+
+.idade {
+    font-size: 12px;
+    font-weight: bold;
+    color: #001f3f;
+    background-color: #e5e7eb;
+    padding: 4px 8px;
+    border-radius: 6px;
+    width: fit-content;
+}

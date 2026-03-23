@@ -1,23 +1,25 @@
 import css from './cardLivro.module.css';
-import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-export default function BookCard({imagem, titulo, categoria, autor}){
+export default function CardLivro({ imagem, categoria, titulo, autor, faixa_etaria }) {
     return (
-
-        <div className={`${css.cartaoLivro} h-100`}>
+        <div className={css.cartaoLivro}>
 
             <div className={css.imagemContainer}>
-                <img src={imagem} alt={titulo} className={css.imagem}/>
-                <div className={css.overlay}></div>
+                <img src={imagem} className={css.imagem} />
                 <Link className={css.botaoDetalhes} to="/Detalhes">Ver</Link>
             </div>
 
             <div className={css.informarcoes}>
                 <span className={css.categoria}>{categoria}</span>
-                <h3 className={css.titulo}>{titulo}</h3>
-                <p className={css.autor}>{autor}</p>
-            </div>
 
+                <h3 className={css.titulo}>{titulo}</h3>
+
+                <p className={css.autor}>{autor}</p>
+
+                <span className={css.idade}>{faixa_etaria}</span>
+
+            </div>
         </div>
-    )
+    );
 }
