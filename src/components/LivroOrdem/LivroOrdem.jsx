@@ -14,7 +14,6 @@ export default function LivroOrdem({ busca, filtro }) {
             .catch((error) => console.error("Erro:", error));
     }, []);
 
-    // 🔍 FILTRO DE BUSCA (titulo, autor, categoria)
     const livrosFiltrados = livros.filter((livro) => {
         const termo = busca.toLowerCase();
 
@@ -25,7 +24,6 @@ export default function LivroOrdem({ busca, filtro }) {
         );
     });
 
-    // 🔽 ORDENAÇÃO
     const livrosOrdenados = [...livrosFiltrados].sort((a, b) => {
 
         if (filtro === "az") {
@@ -54,7 +52,7 @@ export default function LivroOrdem({ busca, filtro }) {
                             categoria={livro.categoria}
                             titulo={livro.titulo}
                             autor={livro.autor}
-                            faixa_etaria={livro.faixa_etaria} 
+                            faixa_etaria={livro.faixa_etaria}
                         />
                     </div>
                 ))}
