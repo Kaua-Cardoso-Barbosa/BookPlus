@@ -7,7 +7,8 @@ export default function Header() {
             <nav className="navbar">
                 <div className="container">
                     <a className="navbar-brand" href="#">
-                        <img src="/Logo.png" alt="Bootstrap" width="50" height="40"/>
+                        <Link to="/"><img  src="/Logo.png" alt="Bootstrap" width="50" height="40"/></Link>
+
                         <span className={css.azul}>BOOK PLUS</span>
                     </a>
 
@@ -20,10 +21,10 @@ export default function Header() {
                             </button>
                             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                                 <div className="navbar-nav">
-                                    <a className="nav-link active" aria-current="page" href="#">Catálago</a>
-                                    <a className="nav-link active" aria-current="page" href="#">Lançamento</a>
-                                    <a className="nav-link active" aria-current="page" href="#">Mais vendidos</a>
-                                    <Link className="nav-link active border border-primary border  rounded bg-primary text-white" aria-current="page" to="/Cadastro">Cadastro</Link>
+                                    <p className="nav-link active" aria-current="page" href="#">Catálago</p>
+                                    <p className="nav-link active" aria-current="page" href="#">Lançamento</p>
+                                    <p className="nav-link active" aria-current="page" href="#">Mais vendidos</p>
+                                    <Link className="nav-link active border border-primary border  rounded bg-primary text-white" aria-current="page" to="/Login">Entrar</Link>
                                 </div>
                             </div>
                         </div>
